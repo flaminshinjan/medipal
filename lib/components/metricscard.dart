@@ -10,14 +10,14 @@ class MetricsCard extends StatelessWidget {
       children: [
         InkWell(
           child: Container(
-              height: 190,
+              height: 180,
               width: 195,
               padding: EdgeInsets.all(16),
               decoration: BoxDecoration(
                 color: Color(0xFF11152A),
                 borderRadius: BorderRadius.circular(30),
               ),
-              child: const Padding(
+              child: Padding(
                 padding: const EdgeInsets.only(left: 5.0),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
@@ -30,22 +30,37 @@ class MetricsCard extends StatelessWidget {
                           color: Colors.white),
                     ),
                     Padding(
-                      padding: EdgeInsets.only(left: 20.0, top: 5),
+                      padding: EdgeInsets.only(left: 30.0, top: 2),
                       child: Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
                         children: [
                           Text(
                             "55kg",
                             style: TextStyle(
-                                fontSize: 30,
+                                fontSize: 25,
                                 fontWeight: FontWeight.w400,
                                 color: Colors.white),
                           ),
                           Text(
                             "155cms",
                             style: TextStyle(
-                                fontSize: 30,
+                                fontSize: 25,
                                 fontWeight: FontWeight.w400,
                                 color: Colors.white),
+                          ),
+                          MaterialButton(
+                            height: 10,
+                            onPressed: () {},
+                            child: Text(
+                              "+ Add Data",
+                              style: TextStyle(
+                                  fontSize: 10,
+                                  fontWeight: FontWeight.w400,
+                                  color: Colors.black),
+                            ),
+                            color: Colors.white,
+                            shape: RoundedRectangleBorder(
+                                borderRadius: BorderRadius.circular(30)),
                           ),
                         ],
                       ),
@@ -54,7 +69,7 @@ class MetricsCard extends StatelessWidget {
                 ),
               )),
         ),
-        SizedBox(height: 20), // Add spacing between the containers
+        // Add spacing between the containers
       ],
     );
   }

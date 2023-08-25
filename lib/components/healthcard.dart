@@ -46,7 +46,7 @@ class HealthCard extends StatelessWidget {
                 ),
               )),
         ),
-        SizedBox(height: 20), // Add spacing between the containers
+        SizedBox(height: 10), // Add spacing between the containers
       ],
     );
   }
