@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:outline_search_bar/outline_search_bar.dart';
 
-class SearchResultPage extends StatefulWidget {
-  const SearchResultPage({super.key});
+class SearchFinalPage extends StatefulWidget {
+  const SearchFinalPage({super.key});
 
   @override
-  State<SearchResultPage> createState() => _SearchResultPageState();
+  State<SearchFinalPage> createState() => _SearchFinalPageState();
 }
 
-class _SearchResultPageState extends State<SearchResultPage> {
+class _SearchFinalPageState extends State<SearchFinalPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -38,16 +38,7 @@ class _SearchResultPageState extends State<SearchResultPage> {
         toolbarHeight: 80,
       ),
       body: Container(
-        child: const Column(children: [
-          Padding(
-            padding: EdgeInsets.only(left: 20.0),
-            child: Text("Topics of your interest:",
-                style: TextStyle(
-                    fontSize: 12,
-                    fontWeight: FontWeight.w400,
-                    color: Colors.black)),
-          ),
-        ]),
+        child: Column(children: [Text("Search Results")]),
       ),
     );
   }

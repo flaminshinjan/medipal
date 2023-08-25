@@ -3,6 +3,7 @@ import 'package:medipal/components/explorecard.dart';
 import 'package:medipal/components/healthcard.dart';
 import 'package:medipal/components/metricscard.dart';
 import 'package:medipal/components/repcard.dart';
+import 'package:medipal/screens/searchinitials.dart';
 
 class DashboardPage extends StatelessWidget {
   const DashboardPage({super.key});
@@ -38,7 +39,12 @@ class DashboardPage extends StatelessWidget {
               IconButton(
                 icon: Icon(Icons.search),
                 onPressed: () {
-                  // Implement search functionality
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => SearchResultPage(),
+                    ),
+                  );
                 },
               ),
             ],

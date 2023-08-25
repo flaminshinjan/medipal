@@ -115,6 +115,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "1.9.1"
+  outline_search_bar:
+    dependency: "direct main"
+    description:
+      name: outline_search_bar
+      sha256: "340fc91de887e3d9cd852756394220c9145bd298df9cb348d864cb19778a4b5a"
+      url: "https://pub.dev"
+    source: hosted
+    version: "2.3.0"
   path:
     dependency: transitive
     description:
@@ -123,6 +131,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "1.8.3"
+  simple_text_field:
+    dependency: transitive
+    description:
+      name: simple_text_field
+      sha256: "925bfdaa860258b263bc1497d02583da3464731dce83d80f6f4e2af0b5ffce12"
+      url: "https://pub.dev"
+    source: hosted
+    version: "2.1.0"
   sky_engine:
     dependency: transitive
     description: flutter
@@ -186,3 +202,4 @@ packages:
     version: "2.1.4"
 sdks:
   dart: ">=3.0.3 <4.0.0"
+  flutter: ">=1.20.0"
